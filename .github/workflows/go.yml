@@ -15,7 +15,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: '1.18'  # Specify the Go version you want to use
+        go-version: '1.22.1'  # Specify the Go version you want to use
 
     - name: Check out code
       uses: actions/checkout@v3
