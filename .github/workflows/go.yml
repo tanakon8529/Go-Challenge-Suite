@@ -1,0 +1,33 @@
+name: Go Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Run Go Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: '1.18'  # Specify the Go version you want to use
+
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Get dependencies
+      run: go mod download
+
+    - name: Test Encode-Decode Numbers
+      run: go test ./cmd/encode_decode_numbers
+
+    - name: Test Maximum Path Sum
+      run: go test ./cmd/max_path_sum
+
+    - name: Test Meat Counter API
+      run: go test ./cmd/meat_counter_api
