@@ -1,7 +1,7 @@
 
 # Go Meat Challenges
 
-This repository contains several Go modules designed to solve specific challenges related to string encoding/decoding, path summation in a triangle array, and an API for counting meat types from text data. Each module is designed to be independently testable and maintainable.
+This repository contains several Go modules designed to solve specific challenges related to string encoding/decoding, path summation in a triangle array, and an API for counting meat types from text data. Each module is independently testable and maintainable.
 
 ## Project Structure
 
@@ -31,6 +31,12 @@ Go Meat Challenges/
 ├── LICENSE # The license file for the project
 └── README.md # This file
 ```
+
+## Technologies and Libraries
+
+- **Go**: Primary programming language.
+- **gRPC**: For the meat counter API.
+- **Protobuf**: Used for defining gRPC services and generating Go files.
 
 ## Requirements
 
